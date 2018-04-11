@@ -6,6 +6,9 @@ import { NgModule } from '@angular/core';
 //Services
 import { YoutubeService } from './services/youtube.service';
 
+//Pipes
+import { YoutubeVideoPipe } from './pipes/youtube-video.pipe';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -15,7 +18,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    YoutubeVideoPipe
   ],
   imports: [
     BrowserModule,
